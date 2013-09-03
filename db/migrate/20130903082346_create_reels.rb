@@ -14,7 +14,7 @@ class CreateReels < ActiveRecord::Migration
       t.boolean :BoundVolumeFlag
       t.text :Comments
       t.string :Dimensions
-      t.number :PagesPerIssue
+      t.integer :PagesPerIssue
       t.integer :NumberResolutionTargets
       t.string :ResolutionOfMaster
       t.string :ResolutionCommentMaster
