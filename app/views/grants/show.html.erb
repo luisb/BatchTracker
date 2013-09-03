@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Beg year:</b>
+  <%= @grant.beg_year %>
+</p>
+
+<p>
+  <b>End year:</b>
+  <%= @grant.end_year %>
+</p>
+
+<p>
+  <b>Org:</b>
+  <%= @grant.org %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @grant.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_grant_path(@grant) %> |
+<%= link_to 'Back', grants_path %>

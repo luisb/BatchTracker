@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  beg_year: 1
+  end_year: 1
+  org: MyString
+  notes: MyText
+
+two:
+  beg_year: 1
+  end_year: 1
+  org: MyString
+  notes: MyText
