@@ -1,4 +1,6 @@
 BatchTracker::Application.routes.draw do
+  resources :batches
+
   resources :reels
 
   resources :issues

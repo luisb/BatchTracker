@@ -1,0 +1,75 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @batch.name %>
+</p>
+
+<p>
+  <b>Name short:</b>
+  <%= @batch.name_short %>
+</p>
+
+<p>
+  <b>Date beg qc:</b>
+  <%= @batch.date_beg_qc %>
+</p>
+
+<p>
+  <b>Corrections needed:</b>
+  <%= @batch.corrections_needed %>
+</p>
+
+<p>
+  <b>Passed validation:</b>
+  <%= @batch.passed_validation %>
+</p>
+
+<p>
+  <b>Date ucb ucr:</b>
+  <%= @batch.date_UCB_UCR %>
+</p>
+
+<p>
+  <b>Date ucr lc:</b>
+  <%= @batch.date_UCR_LC %>
+</p>
+
+<p>
+  <b>Lc approve:</b>
+  <%= @batch.LC_approve %>
+</p>
+
+<p>
+  <b>Valid reels:</b>
+  <%= @batch.valid_reels %>
+</p>
+
+<p>
+  <b>Valid issues:</b>
+  <%= @batch.valid_issues %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%= @batch.size %>
+</p>
+
+<p>
+  <b>Server location:</b>
+  <%= @batch.server_location %>
+</p>
+
+<p>
+  <b>Ingested:</b>
+  <%= @batch.ingested %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @batch.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_batch_path(@batch) %> |
+<%= link_to 'Back', batches_path %>

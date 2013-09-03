@@ -1,0 +1,73 @@
+<%= form_for(@batch) do |f| %>
+  <% if @batch.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@batch.errors.count, "error") %> prohibited this batch from being saved:</h2>
+
+      <ul>
+      <% @batch.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :name_short %><br />
+    <%= f.text_field :name_short %>
+  </div>
+  <div class="field">
+    <%= f.label :date_beg_qc %><br />
+    <%= f.date_select :date_beg_qc %>
+  </div>
+  <div class="field">
+    <%= f.label :corrections_needed %><br />
+    <%= f.check_box :corrections_needed %>
+  </div>
+  <div class="field">
+    <%= f.label :passed_validation %><br />
+    <%= f.check_box :passed_validation %>
+  </div>
+  <div class="field">
+    <%= f.label :date_UCB_UCR %><br />
+    <%= f.date_select :date_UCB_UCR %>
+  </div>
+  <div class="field">
+    <%= f.label :date_UCR_LC %><br />
+    <%= f.date_select :date_UCR_LC %>
+  </div>
+  <div class="field">
+    <%= f.label :LC_approve %><br />
+    <%= f.check_box :LC_approve %>
+  </div>
+  <div class="field">
+    <%= f.label :valid_reels %><br />
+    <%= f.number_field :valid_reels %>
+  </div>
+  <div class="field">
+    <%= f.label :valid_issues %><br />
+    <%= f.number_field :valid_issues %>
+  </div>
+  <div class="field">
+    <%= f.label :size %><br />
+    <%= f.number_field :size %>
+  </div>
+  <div class="field">
+    <%= f.label :server_location %><br />
+    <%= f.text_field :server_location %>
+  </div>
+  <div class="field">
+    <%= f.label :ingested %><br />
+    <%= f.check_box :ingested %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  name_short: MyString
+  date_beg_qc: 2013-09-03
+  corrections_needed: false
+  passed_validation: false
+  date_UCB_UCR: 2013-09-03
+  date_UCR_LC: 2013-09-03
+  LC_approve: false
+  valid_reels: 1
+  valid_issues: 1
+  size: 1
+  server_location: MyString
+  ingested: false
+  notes: MyText
+
+two:
+  name: MyString
+  name_short: MyString
+  date_beg_qc: 2013-09-03
+  corrections_needed: false
+  passed_validation: false
+  date_UCB_UCR: 2013-09-03
+  date_UCR_LC: 2013-09-03
+  LC_approve: false
+  valid_reels: 1
+  valid_issues: 1
+  size: 1
+  server_location: MyString
+  ingested: false
+  notes: MyText

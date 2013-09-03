@@ -1,0 +1,49 @@
+<h1>Listing batches</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Name short</th>
+    <th>Date beg qc</th>
+    <th>Corrections needed</th>
+    <th>Passed validation</th>
+    <th>Date ucb ucr</th>
+    <th>Date ucr lc</th>
+    <th>Lc approve</th>
+    <th>Valid reels</th>
+    <th>Valid issues</th>
+    <th>Size</th>
+    <th>Server location</th>
+    <th>Ingested</th>
+    <th>Notes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @batches.each do |batch| %>
+  <tr>
+    <td><%= batch.name %></td>
+    <td><%= batch.name_short %></td>
+    <td><%= batch.date_beg_qc %></td>
+    <td><%= batch.corrections_needed %></td>
+    <td><%= batch.passed_validation %></td>
+    <td><%= batch.date_UCB_UCR %></td>
+    <td><%= batch.date_UCR_LC %></td>
+    <td><%= batch.LC_approve %></td>
+    <td><%= batch.valid_reels %></td>
+    <td><%= batch.valid_issues %></td>
+    <td><%= batch.size %></td>
+    <td><%= batch.server_location %></td>
+    <td><%= batch.ingested %></td>
+    <td><%= batch.notes %></td>
+    <td><%= link_to 'Show', batch %></td>
+    <td><%= link_to 'Edit', edit_batch_path(batch) %></td>
+    <td><%= link_to 'Destroy', batch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Batch', new_batch_path %>
