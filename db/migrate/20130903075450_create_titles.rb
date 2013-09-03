@@ -5,7 +5,7 @@ class CreateTitles < ActiveRecord::Migration
       t.string :title
       t.string :city_publication
       t.integer :beg_date
-      t.year :end_date
+      t.date :end_date
       t.string :issue_edition_pattern
 
       t.timestamps
