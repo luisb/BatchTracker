@@ -1,0 +1,21 @@
+<%= form_for(@abbrv_title) do |f| %>
+  <% if @abbrv_title.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@abbrv_title.errors.count, "error") %> prohibited this abbrv_title from being saved:</h2>
+
+      <ul>
+      <% @abbrv_title.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

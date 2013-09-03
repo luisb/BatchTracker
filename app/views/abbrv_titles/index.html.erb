@@ -1,0 +1,23 @@
+<h1>Listing abbrv_titles</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @abbrv_titles.each do |abbrv_title| %>
+  <tr>
+    <td><%= abbrv_title.name %></td>
+    <td><%= link_to 'Show', abbrv_title %></td>
+    <td><%= link_to 'Edit', edit_abbrv_title_path(abbrv_title) %></td>
+    <td><%= link_to 'Destroy', abbrv_title, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Abbrv title', new_abbrv_title_path %>

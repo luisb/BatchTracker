@@ -1,4 +1,6 @@
 BatchTracker::Application.routes.draw do
+  resources :abbrv_titles
+
   resources :grants
 
   # The priority is based upon order of creation:
