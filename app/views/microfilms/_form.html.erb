@@ -1,0 +1,53 @@
+<%= form_for(@microfilm) do |f| %>
+  <% if @microfilm.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@microfilm.errors.count, "error") %> prohibited this microfilm from being saved:</h2>
+
+      <ul>
+      <% @microfilm.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date_shipped_scan %><br />
+    <%= f.date_select :date_shipped_scan %>
+  </div>
+  <div class="field">
+    <%= f.label :tracking_number %><br />
+    <%= f.text_field :tracking_number %>
+  </div>
+  <div class="field">
+    <%= f.label :date_tiffs_shipped_ucr %><br />
+    <%= f.date_select :date_tiffs_shipped_ucr %>
+  </div>
+  <div class="field">
+    <%= f.label :date_film_returned %><br />
+    <%= f.date_select :date_film_returned %>
+  </div>
+  <div class="field">
+    <%= f.label :shelved_at_ucb %><br />
+    <%= f.check_box :shelved_at_ucb %>
+  </div>
+  <div class="field">
+    <%= f.label :date_shipped_rescan %><br />
+    <%= f.date_select :date_shipped_rescan %>
+  </div>
+  <div class="field">
+    <%= f.label :rescan_tracking_number %><br />
+    <%= f.text_field :rescan_tracking_number %>
+  </div>
+  <div class="field">
+    <%= f.label :date_shipped_lc %><br />
+    <%= f.date_select :date_shipped_lc %>
+  </div>
+  <div class="field">
+    <%= f.label :vendor_project_id %><br />
+    <%= f.text_field :vendor_project_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

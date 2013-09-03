@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date shipped scan:</b>
+  <%= @microfilm.date_shipped_scan %>
+</p>
+
+<p>
+  <b>Tracking number:</b>
+  <%= @microfilm.tracking_number %>
+</p>
+
+<p>
+  <b>Date tiffs shipped ucr:</b>
+  <%= @microfilm.date_tiffs_shipped_ucr %>
+</p>
+
+<p>
+  <b>Date film returned:</b>
+  <%= @microfilm.date_film_returned %>
+</p>
+
+<p>
+  <b>Shelved at ucb:</b>
+  <%= @microfilm.shelved_at_ucb %>
+</p>
+
+<p>
+  <b>Date shipped rescan:</b>
+  <%= @microfilm.date_shipped_rescan %>
+</p>
+
+<p>
+  <b>Rescan tracking number:</b>
+  <%= @microfilm.rescan_tracking_number %>
+</p>
+
+<p>
+  <b>Date shipped lc:</b>
+  <%= @microfilm.date_shipped_lc %>
+</p>
+
+<p>
+  <b>Vendor project:</b>
+  <%= @microfilm.vendor_project_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_microfilm_path(@microfilm) %> |
+<%= link_to 'Back', microfilms_path %>

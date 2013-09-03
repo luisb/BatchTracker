@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  date_shipped_scan: 2013-09-03
+  tracking_number: MyString
+  date_tiffs_shipped_ucr: 2013-09-03
+  date_film_returned: 2013-09-03
+  shelved_at_ucb: false
+  date_shipped_rescan: 2013-09-03
+  rescan_tracking_number: MyString
+  date_shipped_lc: 2013-09-03
+  vendor_project_id: MyString
+
+two:
+  date_shipped_scan: 2013-09-03
+  tracking_number: MyString
+  date_tiffs_shipped_ucr: 2013-09-03
+  date_film_returned: 2013-09-03
+  shelved_at_ucb: false
+  date_shipped_rescan: 2013-09-03
+  rescan_tracking_number: MyString
+  date_shipped_lc: 2013-09-03
+  vendor_project_id: MyString

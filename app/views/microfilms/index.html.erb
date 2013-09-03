@@ -1,0 +1,39 @@
+<h1>Listing microfilms</h1>
+
+<table>
+  <tr>
+    <th>Date shipped scan</th>
+    <th>Tracking number</th>
+    <th>Date tiffs shipped ucr</th>
+    <th>Date film returned</th>
+    <th>Shelved at ucb</th>
+    <th>Date shipped rescan</th>
+    <th>Rescan tracking number</th>
+    <th>Date shipped lc</th>
+    <th>Vendor project</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @microfilms.each do |microfilm| %>
+  <tr>
+    <td><%= microfilm.date_shipped_scan %></td>
+    <td><%= microfilm.tracking_number %></td>
+    <td><%= microfilm.date_tiffs_shipped_ucr %></td>
+    <td><%= microfilm.date_film_returned %></td>
+    <td><%= microfilm.shelved_at_ucb %></td>
+    <td><%= microfilm.date_shipped_rescan %></td>
+    <td><%= microfilm.rescan_tracking_number %></td>
+    <td><%= microfilm.date_shipped_lc %></td>
+    <td><%= microfilm.vendor_project_id %></td>
+    <td><%= link_to 'Show', microfilm %></td>
+    <td><%= link_to 'Edit', edit_microfilm_path(microfilm) %></td>
+    <td><%= link_to 'Destroy', microfilm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Microfilm', new_microfilm_path %>
