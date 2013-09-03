@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  volume: MyString
+  number: 1
+  edition_number: 1
+  edition_label: MyString
+  date: 2013-09-03
+  date_printed: 2013-09-03
+  present: false
+  phys_description: MyText
+  num_sections: 1
+  num_pages: 1
+  missing_pages: MyText
+  duplicate_pages: MyText
+  notes: MyText
+
+two:
+  volume: MyString
+  number: 1
+  edition_number: 1
+  edition_label: MyString
+  date: 2013-09-03
+  date_printed: 2013-09-03
+  present: false
+  phys_description: MyText
+  num_sections: 1
+  num_pages: 1
+  missing_pages: MyText
+  duplicate_pages: MyText
+  notes: MyText

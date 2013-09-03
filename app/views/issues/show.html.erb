@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Volume:</b>
+  <%= @issue.volume %>
+</p>
+
+<p>
+  <b>Number:</b>
+  <%= @issue.number %>
+</p>
+
+<p>
+  <b>Edition number:</b>
+  <%= @issue.edition_number %>
+</p>
+
+<p>
+  <b>Edition label:</b>
+  <%= @issue.edition_label %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @issue.date %>
+</p>
+
+<p>
+  <b>Date printed:</b>
+  <%= @issue.date_printed %>
+</p>
+
+<p>
+  <b>Present:</b>
+  <%= @issue.present %>
+</p>
+
+<p>
+  <b>Phys description:</b>
+  <%= @issue.phys_description %>
+</p>
+
+<p>
+  <b>Num sections:</b>
+  <%= @issue.num_sections %>
+</p>
+
+<p>
+  <b>Num pages:</b>
+  <%= @issue.num_pages %>
+</p>
+
+<p>
+  <b>Missing pages:</b>
+  <%= @issue.missing_pages %>
+</p>
+
+<p>
+  <b>Duplicate pages:</b>
+  <%= @issue.duplicate_pages %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @issue.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_issue_path(@issue) %> |
+<%= link_to 'Back', issues_path %>

@@ -1,0 +1,69 @@
+<%= form_for(@issue) do |f| %>
+  <% if @issue.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@issue.errors.count, "error") %> prohibited this issue from being saved:</h2>
+
+      <ul>
+      <% @issue.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :volume %><br />
+    <%= f.text_field :volume %>
+  </div>
+  <div class="field">
+    <%= f.label :number %><br />
+    <%= f.number_field :number %>
+  </div>
+  <div class="field">
+    <%= f.label :edition_number %><br />
+    <%= f.number_field :edition_number %>
+  </div>
+  <div class="field">
+    <%= f.label :edition_label %><br />
+    <%= f.text_field :edition_label %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :date_printed %><br />
+    <%= f.date_select :date_printed %>
+  </div>
+  <div class="field">
+    <%= f.label :present %><br />
+    <%= f.check_box :present %>
+  </div>
+  <div class="field">
+    <%= f.label :phys_description %><br />
+    <%= f.text_area :phys_description %>
+  </div>
+  <div class="field">
+    <%= f.label :num_sections %><br />
+    <%= f.number_field :num_sections %>
+  </div>
+  <div class="field">
+    <%= f.label :num_pages %><br />
+    <%= f.number_field :num_pages %>
+  </div>
+  <div class="field">
+    <%= f.label :missing_pages %><br />
+    <%= f.text_area :missing_pages %>
+  </div>
+  <div class="field">
+    <%= f.label :duplicate_pages %><br />
+    <%= f.text_area :duplicate_pages %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
