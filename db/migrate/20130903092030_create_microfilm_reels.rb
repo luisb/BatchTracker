@@ -1,6 +1,6 @@
-class CreateMicrofilms < ActiveRecord::Migration
+class CreateMicrofilmReels < ActiveRecord::Migration
   def change
-    create_table :microfilms do |t|
+    create_table :microfilm_reels do |t|
       t.date :date_shipped_scan
       t.string :tracking_number
       t.date :date_tiffs_shipped_ucr

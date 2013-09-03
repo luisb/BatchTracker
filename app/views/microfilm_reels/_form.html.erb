@@ -1,10 +1,10 @@
-<%= form_for(@microfilm) do |f| %>
-  <% if @microfilm.errors.any? %>
+<%= form_for(@microfilm_reel) do |f| %>
+  <% if @microfilm_reel.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@microfilm.errors.count, "error") %> prohibited this microfilm from being saved:</h2>
+      <h2><%= pluralize(@microfilm_reel.errors.count, "error") %> prohibited this microfilm_reel from being saved:</h2>
 
       <ul>
-      <% @microfilm.errors.full_messages.each do |msg| %>
+      <% @microfilm_reel.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>

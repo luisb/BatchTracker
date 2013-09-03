@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class MicrofilmTest < ActiveSupport::TestCase
+class MicrofilmReelTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
