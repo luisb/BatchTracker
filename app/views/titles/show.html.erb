@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Lccn:</b>
+  <%= @title.lccn %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @title.title %>
+</p>
+
+<p>
+  <b>City publication:</b>
+  <%= @title.city_publication %>
+</p>
+
+<p>
+  <b>Beg date:</b>
+  <%= @title.beg_date %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%= @title.end_date %>
+</p>
+
+<p>
+  <b>Issue edition pattern:</b>
+  <%= @title.issue_edition_pattern %>
+</p>
+
+
+<%= link_to 'Edit', edit_title_path(@title) %> |
+<%= link_to 'Back', titles_path %>

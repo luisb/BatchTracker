@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  lccn: 1
+  title: MyString
+  city_publication: MyString
+  beg_date: 1
+  end_date: 
+  issue_edition_pattern: MyString
+
+two:
+  lccn: 1
+  title: MyString
+  city_publication: MyString
+  beg_date: 1
+  end_date: 
+  issue_edition_pattern: MyString
