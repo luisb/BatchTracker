@@ -1,0 +1,137 @@
+<%= form_for(@reel) do |f| %>
+  <% if @reel.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@reel.errors.count, "error") %> prohibited this reel from being saved:</h2>
+
+      <ul>
+      <% @reel.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :number %><br />
+    <%= f.text_field :number %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %><br />
+    <%= f.date_select :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :end_date %><br />
+    <%= f.date_select :end_date %>
+  </div>
+  <div class="field">
+    <%= f.label :reduction_ratio %><br />
+    <%= f.text_field :reduction_ratio %>
+  </div>
+  <div class="field">
+    <%= f.label :CaptureResolutionOriginal %><br />
+    <%= f.text_field :CaptureResolutionOriginal %>
+  </div>
+  <div class="field">
+    <%= f.label :CaptureResolutionFilm %><br />
+    <%= f.text_field :CaptureResolutionFilm %>
+  </div>
+  <div class="field">
+    <%= f.label :GuideToContentsPresentFlag %><br />
+    <%= f.check_box :GuideToContentsPresentFlag %>
+  </div>
+  <div class="field">
+    <%= f.label :GuideToContentsString %><br />
+    <%= f.text_field :GuideToContentsString %>
+  </div>
+  <div class="field">
+    <%= f.label :DateMicrofilmCreated %><br />
+    <%= f.date_select :DateMicrofilmCreated %>
+  </div>
+  <div class="field">
+    <%= f.label :LooseLeavesFlag %><br />
+    <%= f.check_box :LooseLeavesFlag %>
+  </div>
+  <div class="field">
+    <%= f.label :BoundVolumeFlag %><br />
+    <%= f.check_box :BoundVolumeFlag %>
+  </div>
+  <div class="field">
+    <%= f.label :Comments %><br />
+    <%= f.text_area :Comments %>
+  </div>
+  <div class="field">
+    <%= f.label :Dimensions %><br />
+    <%= f.text_field :Dimensions %>
+  </div>
+  <div class="field">
+    <%= f.label :PagesPerIssue %><br />
+    <%= f.text_field :PagesPerIssue %>
+  </div>
+  <div class="field">
+    <%= f.label :NumberResolutionTargets %><br />
+    <%= f.number_field :NumberResolutionTargets %>
+  </div>
+  <div class="field">
+    <%= f.label :ResolutionOfMaster %><br />
+    <%= f.text_field :ResolutionOfMaster %>
+  </div>
+  <div class="field">
+    <%= f.label :ResolutionCommentMaster %><br />
+    <%= f.text_field :ResolutionCommentMaster %>
+  </div>
+  <div class="field">
+    <%= f.label :DensityReadingMaster %><br />
+    <%= f.text_field :DensityReadingMaster %>
+  </div>
+  <div class="field">
+    <%= f.label :AverageDensityMaster %><br />
+    <%= f.text_field :AverageDensityMaster %>
+  </div>
+  <div class="field">
+    <%= f.label :DminMaster %><br />
+    <%= f.text_field :DminMaster %>
+  </div>
+  <div class="field">
+    <%= f.label :ResolutionOfDuplicateNegative %><br />
+    <%= f.text_field :ResolutionOfDuplicateNegative %>
+  </div>
+  <div class="field">
+    <%= f.label :ResolutionCommentDuplicateNegative %><br />
+    <%= f.text_field :ResolutionCommentDuplicateNegative %>
+  </div>
+  <div class="field">
+    <%= f.label :DensityReadingDuplicateNegative %><br />
+    <%= f.text_field :DensityReadingDuplicateNegative %>
+  </div>
+  <div class="field">
+    <%= f.label :AverageDensityDuplicateNegative %><br />
+    <%= f.text_field :AverageDensityDuplicateNegative %>
+  </div>
+  <div class="field">
+    <%= f.label :DminDuplicateNegative %><br />
+    <%= f.text_field :DminDuplicateNegative %>
+  </div>
+  <div class="field">
+    <%= f.label :DigitalResponsibleInstitution %><br />
+    <%= f.text_field :DigitalResponsibleInstitution %>
+  </div>
+  <div class="field">
+    <%= f.label :DigitalResponsibleInstitutionCode %><br />
+    <%= f.text_field :DigitalResponsibleInstitutionCode %>
+  </div>
+  <div class="field">
+    <%= f.label :SourceRepository %><br />
+    <%= f.text_field :SourceRepository %>
+  </div>
+  <div class="field">
+    <%= f.label :SourceRepositoryCode %><br />
+    <%= f.text_field :SourceRepositoryCode %>
+  </div>
+  <div class="field">
+    <%= f.label :NoteToProcessor %><br />
+    <%= f.text_area :NoteToProcessor %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

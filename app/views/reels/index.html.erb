@@ -1,0 +1,81 @@
+<h1>Listing reels</h1>
+
+<table>
+  <tr>
+    <th>Number</th>
+    <th>Start date</th>
+    <th>End date</th>
+    <th>Reduction ratio</th>
+    <th>Captureresolutionoriginal</th>
+    <th>Captureresolutionfilm</th>
+    <th>Guidetocontentspresentflag</th>
+    <th>Guidetocontentsstring</th>
+    <th>Datemicrofilmcreated</th>
+    <th>Looseleavesflag</th>
+    <th>Boundvolumeflag</th>
+    <th>Comments</th>
+    <th>Dimensions</th>
+    <th>Pagesperissue</th>
+    <th>Numberresolutiontargets</th>
+    <th>Resolutionofmaster</th>
+    <th>Resolutioncommentmaster</th>
+    <th>Densityreadingmaster</th>
+    <th>Averagedensitymaster</th>
+    <th>Dminmaster</th>
+    <th>Resolutionofduplicatenegative</th>
+    <th>Resolutioncommentduplicatenegative</th>
+    <th>Densityreadingduplicatenegative</th>
+    <th>Averagedensityduplicatenegative</th>
+    <th>Dminduplicatenegative</th>
+    <th>Digitalresponsibleinstitution</th>
+    <th>Digitalresponsibleinstitutioncode</th>
+    <th>Sourcerepository</th>
+    <th>Sourcerepositorycode</th>
+    <th>Notetoprocessor</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @reels.each do |reel| %>
+  <tr>
+    <td><%= reel.number %></td>
+    <td><%= reel.start_date %></td>
+    <td><%= reel.end_date %></td>
+    <td><%= reel.reduction_ratio %></td>
+    <td><%= reel.CaptureResolutionOriginal %></td>
+    <td><%= reel.CaptureResolutionFilm %></td>
+    <td><%= reel.GuideToContentsPresentFlag %></td>
+    <td><%= reel.GuideToContentsString %></td>
+    <td><%= reel.DateMicrofilmCreated %></td>
+    <td><%= reel.LooseLeavesFlag %></td>
+    <td><%= reel.BoundVolumeFlag %></td>
+    <td><%= reel.Comments %></td>
+    <td><%= reel.Dimensions %></td>
+    <td><%= reel.PagesPerIssue %></td>
+    <td><%= reel.NumberResolutionTargets %></td>
+    <td><%= reel.ResolutionOfMaster %></td>
+    <td><%= reel.ResolutionCommentMaster %></td>
+    <td><%= reel.DensityReadingMaster %></td>
+    <td><%= reel.AverageDensityMaster %></td>
+    <td><%= reel.DminMaster %></td>
+    <td><%= reel.ResolutionOfDuplicateNegative %></td>
+    <td><%= reel.ResolutionCommentDuplicateNegative %></td>
+    <td><%= reel.DensityReadingDuplicateNegative %></td>
+    <td><%= reel.AverageDensityDuplicateNegative %></td>
+    <td><%= reel.DminDuplicateNegative %></td>
+    <td><%= reel.DigitalResponsibleInstitution %></td>
+    <td><%= reel.DigitalResponsibleInstitutionCode %></td>
+    <td><%= reel.SourceRepository %></td>
+    <td><%= reel.SourceRepositoryCode %></td>
+    <td><%= reel.NoteToProcessor %></td>
+    <td><%= link_to 'Show', reel %></td>
+    <td><%= link_to 'Edit', edit_reel_path(reel) %></td>
+    <td><%= link_to 'Destroy', reel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Reel', new_reel_path %>

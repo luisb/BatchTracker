@@ -1,0 +1,3 @@
+class Reel < ActiveRecord::Base
+  attr_accessible :AverageDensityDuplicateNegative, :AverageDensityMaster, :BoundVolumeFlag, :CaptureResolutionFilm, :CaptureResolutionOriginal, :Comments, :DateMicrofilmCreated, :DensityReadingDuplicateNegative, :DensityReadingMaster, :DigitalResponsibleInstitution, :DigitalResponsibleInstitutionCode, :Dimensions, :DminDuplicateNegative, :DminMaster, :GuideToContentsPresentFlag, :GuideToContentsString, :LooseLeavesFlag, :NoteToProcessor, :NumberResolutionTargets, :PagesPerIssue, :ResolutionCommentDuplicateNegative, :ResolutionCommentMaster, :ResolutionOfDuplicateNegative, :ResolutionOfMaster, :SourceRepository, :SourceRepositoryCode, :end_date, :number, :reduction_ratio, :start_date
+end

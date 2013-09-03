@@ -1,0 +1,65 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  number: MyString
+  start_date: 2013-09-03
+  end_date: 2013-09-03
+  reduction_ratio: MyString
+  CaptureResolutionOriginal: MyString
+  CaptureResolutionFilm: MyString
+  GuideToContentsPresentFlag: false
+  GuideToContentsString: MyString
+  DateMicrofilmCreated: 2013-09-03
+  LooseLeavesFlag: false
+  BoundVolumeFlag: false
+  Comments: MyText
+  Dimensions: MyString
+  PagesPerIssue: 
+  NumberResolutionTargets: 1
+  ResolutionOfMaster: MyString
+  ResolutionCommentMaster: MyString
+  DensityReadingMaster: MyString
+  AverageDensityMaster: MyString
+  DminMaster: MyString
+  ResolutionOfDuplicateNegative: MyString
+  ResolutionCommentDuplicateNegative: MyString
+  DensityReadingDuplicateNegative: MyString
+  AverageDensityDuplicateNegative: MyString
+  DminDuplicateNegative: MyString
+  DigitalResponsibleInstitution: MyString
+  DigitalResponsibleInstitutionCode: MyString
+  SourceRepository: MyString
+  SourceRepositoryCode: MyString
+  NoteToProcessor: MyText
+
+two:
+  number: MyString
+  start_date: 2013-09-03
+  end_date: 2013-09-03
+  reduction_ratio: MyString
+  CaptureResolutionOriginal: MyString
+  CaptureResolutionFilm: MyString
+  GuideToContentsPresentFlag: false
+  GuideToContentsString: MyString
+  DateMicrofilmCreated: 2013-09-03
+  LooseLeavesFlag: false
+  BoundVolumeFlag: false
+  Comments: MyText
+  Dimensions: MyString
+  PagesPerIssue: 
+  NumberResolutionTargets: 1
+  ResolutionOfMaster: MyString
+  ResolutionCommentMaster: MyString
+  DensityReadingMaster: MyString
+  AverageDensityMaster: MyString
+  DminMaster: MyString
+  ResolutionOfDuplicateNegative: MyString
+  ResolutionCommentDuplicateNegative: MyString
+  DensityReadingDuplicateNegative: MyString
+  AverageDensityDuplicateNegative: MyString
+  DminDuplicateNegative: MyString
+  DigitalResponsibleInstitution: MyString
+  DigitalResponsibleInstitutionCode: MyString
+  SourceRepository: MyString
+  SourceRepositoryCode: MyString
+  NoteToProcessor: MyText
