@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130903092030) do
+ActiveRecord::Schema.define(:version => 20130905003904) do
 
   create_table "abbrv_titles", :force => true do |t|
     t.string   "name"
@@ -36,6 +36,8 @@ ActiveRecord::Schema.define(:version => 20130903092030) do
     t.text     "notes"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
+    t.date     "ingest_date"
+    t.date     "embargo_end_date"
   end
 
   create_table "grants", :force => true do |t|
