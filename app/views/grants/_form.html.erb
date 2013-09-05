@@ -12,16 +12,16 @@
   <% end %>
 
   <div class="field">
+	<%= f.label :project_id =%><br />
+    <%= f.collection_select :project_id, Project.all, :id, :name, :prompt => "Select a Project" %>
+  </div>
+  <div class="field">
     <%= f.label :beg_year %><br />
     <%= f.number_field :beg_year %>
   </div>
   <div class="field">
     <%= f.label :end_year %><br />
     <%= f.number_field :end_year %>
-  </div>
-  <div class="field">
-    <%= f.label :org %><br />
-    <%= f.text_field :org %>
   </div>
   <div class="field">
     <%= f.label :notes %><br />

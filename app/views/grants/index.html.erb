@@ -2,9 +2,9 @@
 
 <table>
   <tr>
-    <th>Beg year</th>
+    <th>Project</th>
+	<th>Beg year</th>
     <th>End year</th>
-    <th>Org</th>
     <th>Notes</th>
     <th></th>
     <th></th>
@@ -13,9 +13,9 @@
 
 <% @grants.each do |grant| %>
   <tr>
-    <td><%= grant.beg_year %></td>
+    <td><%= grant.project.name %></td>
+	<td><%= grant.beg_year %></td>
     <td><%= grant.end_year %></td>
-    <td><%= grant.org %></td>
     <td><%= grant.notes %></td>
     <td><%= link_to 'Show', grant %></td>
     <td><%= link_to 'Edit', edit_grant_path(grant) %></td>
