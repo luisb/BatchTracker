@@ -3,3 +3,10 @@
 
 en:
   hello: "Hello world"
+  activerecord:
+      attributes:
+        grant:
+            beg_year: Beginning Year
+            end_year: "End Year"
+            org: "Organization"
+            
