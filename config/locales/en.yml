@@ -8,5 +8,5 @@ en:
         grant:
             beg_year: Beginning Year
             end_year: "End Year"
-            org: "Organization"
+            project_id: "Project"
             
