@@ -1,4 +1,6 @@
 BatchTracker::Application.routes.draw do
+  resources :projects
+
   resources :microfilm_reels
 
   resources :batches
