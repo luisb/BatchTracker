@@ -3,4 +3,4 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 $(document).ready ->
 	$("#batch_name").blur( ->
-		$("#batch_name_short").val($("#batch_name").val().replace(/.*_/, "")))
+		$("#batch_name_short").val($("#batch_name").val().replace(/.*_/, "")).effect("highlight"))

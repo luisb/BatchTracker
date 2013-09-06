@@ -3,4 +3,4 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 $(document).ready ->
 	$("#grant_beg_year").blur( ->
-		$("#grant_end_year").val(parseInt($("#grant_beg_year").val()) + 2))
+		$("#grant_end_year").val(parseInt($("#grant_beg_year").val()) + 2).effect("highlight"))
