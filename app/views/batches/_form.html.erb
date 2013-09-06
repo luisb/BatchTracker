@@ -12,6 +12,10 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :grant_id %><br />
+    <%= f.collection_select :grant_id, Grant.all, :id, :display, :prompt => "Select a project:" %>
+  </div>
+  <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>

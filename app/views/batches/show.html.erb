@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <b>Grant:</b>
+  <%= @batch.grant.display %>
+</p>
+
+<p>
   <b>Name:</b>
   <%= @batch.name %>
 </p>
@@ -11,7 +16,7 @@
 </p>
 
 <p>
-  <b>Date beg qc:</b>
+  <b>Date QC Began:</b>
   <%= @batch.date_beg_qc %>
 </p>
 
@@ -26,17 +31,17 @@
 </p>
 
 <p>
-  <b>Date ucb ucr:</b>
+  <b>Date Sent UCR -> UCR:</b>
   <%= @batch.date_UCB_UCR %>
 </p>
 
 <p>
-  <b>Date ucr lc:</b>
+  <b>Date Sent UCR -> LC:</b>
   <%= @batch.date_UCR_LC %>
 </p>
 
 <p>
-  <b>Lc approve:</b>
+  <b>LC Approval?:</b>
   <%= @batch.LC_approve %>
 </p>
 

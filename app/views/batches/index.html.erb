@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+	<th>Grant</th>
     <th>Name</th>
     <th>Name short</th>
     <th>Date beg qc</th>
@@ -23,6 +24,7 @@
 
 <% @batches.each do |batch| %>
   <tr>
+	<td><%= batch.grant.display %></td>
     <td><%= batch.name %></td>
     <td><%= batch.name_short %></td>
     <td><%= batch.date_beg_qc %></td>
