@@ -4,3 +4,6 @@
 $(document).ready ->
 	$("#batch_name").blur( ->
 		$("#batch_name_short").val($("#batch_name").val().replace(/.*_/, "")).effect("highlight"))
+
+$ ->
+	$("#batch_date_beg_qc, #batch_date_UCB_UCR, #batch_date_UCR_LC").datepicker()
