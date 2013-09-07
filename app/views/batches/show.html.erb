@@ -22,12 +22,12 @@
 
 <p>
   <b>Corrections needed:</b>
-  <%= @batch.corrections_needed %>
+  <%= @batch.corrections_needed.yesno %>
 </p>
 
 <p>
   <b>Passed validation:</b>
-  <%= @batch.passed_validation %>
+  <%= @batch.passed_validation.yesno %>
 </p>
 
 <p>
@@ -42,7 +42,7 @@
 
 <p>
   <b>LC Approval?:</b>
-  <%= @batch.LC_approve %>
+  <%= @batch.LC_approve.yesno %>
 </p>
 
 <p>
@@ -67,7 +67,7 @@
 
 <p>
   <b>Ingested:</b>
-  <%= @batch.ingested %>
+  <%= @batch.ingested.yesno %>
 </p>
 
 <p>
