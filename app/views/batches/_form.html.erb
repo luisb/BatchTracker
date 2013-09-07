@@ -56,8 +56,12 @@
     <%= f.number_field :valid_issues %>
   </div>
   <div class="field">
+	    <%= f.label :num_tiffs %><br />
+      <%= f.number_field :num_tiffs %>
+	</div>
+  <div class="field">
     <%= f.label :size %><br />
-    <%= f.number_field :size %>
+    <%= f.number_field :size %>GB
   </div>
   <div class="field">
     <%= f.label :server_location %><br />

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130905233819) do
+ActiveRecord::Schema.define(:version => 20130907043826) do
 
   create_table "abbrv_titles", :force => true do |t|
     t.string   "name"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(:version => 20130905233819) do
     t.date     "ingest_date"
     t.date     "embargo_end_date"
     t.integer  "grant_id"
+    t.integer  "num_tiffs"
   end
 
   add_index "batches", ["grant_id"], :name => "index_batches_on_grant_id"
