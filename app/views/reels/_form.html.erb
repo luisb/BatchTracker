@@ -12,6 +12,10 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :batch_id %><br />
+    <%= f.collection_select :batch_id, Batch.all, :id, :name_short, :prompt => "Select a batch:" %>
+  </div>
+  <div class="field">
     <%= f.label :number %><br />
     <%= f.text_field :number %>
   </div>

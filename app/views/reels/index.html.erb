@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Batch</th>
     <th>Number</th>
     <th>Start date</th>
     <th>End date</th>
@@ -39,6 +40,7 @@
 
 <% @reels.each do |reel| %>
   <tr>
+    <td><%= reel.batch.name_short %>
     <td><%= reel.number %></td>
     <td><%= reel.start_date %></td>
     <td><%= reel.end_date %></td>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130907043826) do
+ActiveRecord::Schema.define(:version => 20130907064606) do
 
   create_table "abbrv_titles", :force => true do |t|
     t.string   "name"
@@ -124,7 +124,10 @@ ActiveRecord::Schema.define(:version => 20130907043826) do
     t.text     "NoteToProcessor"
     t.datetime "created_at",                         :null => false
     t.datetime "updated_at",                         :null => false
+    t.integer  "batch_id"
   end
+
+  add_index "reels", ["batch_id"], :name => "index_reels_on_batch_id"
 
   create_table "titles", :force => true do |t|
     t.integer  "lccn"
