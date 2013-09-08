@@ -10,7 +10,11 @@
       </ul>
     </div>
   <% end %>
-
+  
+  <div class="field">
+    <%= f.label :abbrv_title_id %><br />
+    <%= f.collection_select :abbrv_title_id, AbbrvTitle.order("name ASC"), :id, :name, :prompt => "Select a title:" %>
+  </div>
   <div class="field">
     <%= f.label :lccn %><br />
     <%= f.number_field :lccn %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130907064606) do
+ActiveRecord::Schema.define(:version => 20130908062037) do
 
   create_table "abbrv_titles", :force => true do |t|
     t.string   "name"
@@ -138,6 +138,9 @@ ActiveRecord::Schema.define(:version => 20130907064606) do
     t.string   "issue_edition_pattern"
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
+    t.integer  "abbrv_title_id"
   end
+
+  add_index "titles", ["abbrv_title_id"], :name => "index_titles_on_abbrv_title_id"
 
 end
