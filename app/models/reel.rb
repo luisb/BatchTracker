@@ -2,6 +2,8 @@ class Reel < ActiveRecord::Base
   attr_accessible :AverageDensityDuplicateNegative, :AverageDensityMaster, :BoundVolumeFlag, :CaptureResolutionFilm, :CaptureResolutionOriginal, :Comments, :DateMicrofilmCreated, :DensityReadingDuplicateNegative, :DensityReadingMaster, :DigitalResponsibleInstitution, :DigitalResponsibleInstitutionCode, :Dimensions, :DminDuplicateNegative, :DminMaster, :GuideToContentsPresentFlag, :GuideToContentsString, :LooseLeavesFlag, :NoteToProcessor, :NumberResolutionTargets, :PagesPerIssue, :ResolutionCommentDuplicateNegative, :ResolutionCommentMaster, :ResolutionOfDuplicateNegative, :ResolutionOfMaster, :SourceRepository, :SourceRepositoryCode, :end_date, :number, :reduction_ratio, :start_date, :batch_id
   
   belongs_to :batch
+  has_many :title_reel_assignments
+  has_many :titles, through: :title_reel_assignments
   
   before_save :pad_number
   
