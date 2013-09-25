@@ -1,0 +1,39 @@
+<div class="titles">
+  <h2>Titles on this reel</h2>
+    <% if @reel.titles.size > 0 %>
+      <table>
+        <tr>
+          <th>Abbrv. Title</th>
+          <th>Lccn</th>
+          <th>Title</th>
+          <th>City publication</th>
+          <th>Beg date</th>
+          <th>End date</th>
+          <th>Issue edition pattern</th>
+        </tr>
+
+      <% @reel.titles.each do |title| %>
+        <tr>
+          <td><%= title.abbrv_title.name %></td>
+          <td><%= title.lccn %></td>
+          <td><%= title.title %></td>
+          <td><%= title.city_publication %></td>
+          <td><%= title.beg_date %></td>
+          <td><%= title.end_date %></td>
+          <td><%= title.issue_edition_pattern %></td>
+        </tr>
+      <% end %>
+      </table>
+    <% else %>
+      <em>No titles currently on this reel.</em>
+    <% end %>
+
+    <br />
+    
+    <%= f.fields_for :title_reel_assignments do |builder| %>
+      <%= render "titles", :f => builder %>
+    <% end %>
+
+    <p><%= f.link_to_add 'Add a title to this reel', :title_reel_assignments %></p>
+  
+</div>
