@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130908181902) do
+ActiveRecord::Schema.define(:version => 20130925062848) do
 
   create_table "abbrv_titles", :force => true do |t|
     t.string   "name"
@@ -143,8 +143,8 @@ ActiveRecord::Schema.define(:version => 20130908181902) do
     t.integer  "lccn"
     t.string   "title"
     t.string   "city_publication"
-    t.integer  "beg_date"
-    t.date     "end_date"
+    t.string   "beg_date"
+    t.string   "end_date"
     t.string   "issue_edition_pattern"
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
