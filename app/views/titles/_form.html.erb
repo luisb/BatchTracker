@@ -11,35 +11,6 @@
     </div>
   <% end %>
   
-  <div class="field">
-    <%= f.label :abbrv_title_id %><br />
-    <%= f.collection_select :abbrv_title_id, AbbrvTitle.order("name ASC"), :id, :name, :prompt => "Select a title:" %>
-  </div>
-  <div class="field">
-    <%= f.label :lccn %><br />
-    <%= f.number_field :lccn %>
-  </div>
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :city_publication %><br />
-    <%= f.text_field :city_publication %>
-  </div>
-  <div class="field">
-    <%= f.label :beg_date %><br />
-    <%= f.number_field :beg_date %>
-  </div>
-  <div class="field">
-    <%= f.label :end_date %><br />
-    <%= f.text_field :end_date %>
-  </div>
-  <div class="field">
-    <%= f.label :issue_edition_pattern %><br />
-    <%= f.text_field :issue_edition_pattern %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <%= render 'title_fields', :f => f %>
+
 <% end %>

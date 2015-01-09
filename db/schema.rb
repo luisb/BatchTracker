@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130908062037) do
+ActiveRecord::Schema.define(:version => 20130925062848) do
 
   create_table "abbrv_titles", :force => true do |t|
     t.string   "name"
@@ -129,12 +129,22 @@ ActiveRecord::Schema.define(:version => 20130908062037) do
 
   add_index "reels", ["batch_id"], :name => "index_reels_on_batch_id"
 
+  create_table "title_reel_assignments", :force => true do |t|
+    t.integer  "title_id"
+    t.integer  "reel_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "title_reel_assignments", ["reel_id"], :name => "index_title_reel_assignments_on_reel_id"
+  add_index "title_reel_assignments", ["title_id"], :name => "index_title_reel_assignments_on_title_id"
+
   create_table "titles", :force => true do |t|
     t.integer  "lccn"
     t.string   "title"
     t.string   "city_publication"
-    t.integer  "beg_date"
-    t.date     "end_date"
+    t.string   "beg_date"
+    t.string   "end_date"
     t.string   "issue_edition_pattern"
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false

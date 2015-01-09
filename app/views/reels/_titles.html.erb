@@ -1,0 +1,6 @@
+<div class="titles">
+  <div class="field">
+    <%= f.label :title_id %><br />
+    <%= f.collection_select :title_id, Title.all, :id, :lccn, :prompt => "Select a title:" %>
+  </div>
+</div>
