@@ -17,11 +17,11 @@
   </div>
   <div class="field">
     <%= f.label :beg_year %><br />
-	<%= select_year Date.today, :start_year => 2005, :end_year => Time.now.year, :field_name => :beg_year, :prefix => :grant %>
+	<%= select_year @grant.beg_year, :start_year => 2005, :end_year => Time.now.year, :field_name => :beg_year, :prefix => :grant %>
   </div>
   <div class="field">
     <%= f.label :end_year %><br />
-    <%= select_year Date.today, :start_year => 2005, :end_year => Time.now.year, :field_name => :end_year, :prefix => :grant %>
+    <%= select_year @grant.end_year, :start_year => 2005, :end_year => Time.now.year, :field_name => :end_year, :prefix => :grant %>
   </div>
   <div class="field">
     <%= f.label :notes %><br />
