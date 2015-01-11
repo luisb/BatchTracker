@@ -25,6 +25,7 @@ gem 'jquery-ui-rails'
 
 gem 'nested_form'
 
+gem 'newrelec_rpm'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
