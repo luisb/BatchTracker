@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :grant_id %><br />
-    <%= f.collection_select :grant_id, Grant.all, :id, :display, :prompt => "Select a project:" %>
+    <%= f.collection_select :grant_id, Grant.all, :id, :display, :prompt => "Select a grant:" %>
   </div>
   <div class="field">
     <%= f.label :name %><br />
@@ -22,6 +22,10 @@
   <div class="field">
     <%= f.label :name_short %><br />
     <%= f.text_field :name_short %>
+  </div>
+  <div class="field">
+    <%= f.label :date_ucr_recvd %><br />
+    <%= f.text_field :date_ucr_recvd %>
   </div>
   <div class="field">
     <%= f.label :date_beg_qc %><br />
@@ -34,10 +38,6 @@
   <div class="field">
     <%= f.label :passed_validation %><br />
     <%= f.check_box :passed_validation %>
-  </div>
-  <div class="field">
-    <%= f.label :date_UCB_UCR %><br />
-    <%= f.text_field :date_UCB_UCR %>
   </div>
   <div class="field">
     <%= f.label :date_UCR_LC %><br />

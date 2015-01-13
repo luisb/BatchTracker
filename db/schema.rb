@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130925062848) do
+ActiveRecord::Schema.define(:version => 20150112204208) do
 
   create_table "abbrv_titles", :force => true do |t|
     t.string   "name"
@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(:version => 20130925062848) do
     t.date     "date_beg_qc"
     t.boolean  "corrections_needed"
     t.boolean  "passed_validation"
-    t.date     "date_UCB_UCR"
+    t.date     "date_ucr_recvd"
     t.date     "date_UCR_LC"
     t.boolean  "LC_approve"
     t.integer  "valid_reels"

@@ -12,7 +12,7 @@ en:
         batch:
             name_short: "Short Name"
             date_beg_qc: "Date QC Began"
-            date_ucb_ucr: "Date sent UCB -> UCR"
+            date_ucr_recvd: "Date UCR Received"
             date_ucr_lc: "Date sent UCR -> LC"
             lc_approve: "LC Approved?"
             

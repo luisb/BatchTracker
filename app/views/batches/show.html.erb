@@ -16,6 +16,11 @@
 </p>
 
 <p>
+  <b>Date UCR Received:</b>
+  <%= @batch.date_ucr_recvd %>
+</p>
+
+<p>
   <b>Date QC Began:</b>
   <%= @batch.date_beg_qc %>
 </p>
@@ -28,11 +33,6 @@
 <p>
   <b>Passed validation:</b>
   <%= @batch.passed_validation.yesno %>
-</p>
-
-<p>
-  <b>Date Sent UCR -> UCR:</b>
-  <%= @batch.date_UCB_UCR %>
 </p>
 
 <p>
