@@ -6,4 +6,4 @@ $(document).ready ->
 		$("#batch_name_short").val($("#batch_name").val().replace(/.*_/, "")).effect("highlight"))
 
 $ ->
-	$("#batch_date_beg_qc, #batch_date_ucr_recvd, #batch_date_UCR_LC").datepicker()
+	$("#embargo_end_date, #batch_date_beg_qc, #batch_date_ucr_recvd, #batch_date_UCR_LC").datepicker()

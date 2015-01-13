@@ -11,6 +11,7 @@ en:
             project_id: "Project"
         batch:
             name_short: "Short Name"
+            embargo_end_date: "Date Embargo Ends"
             date_beg_qc: "Date QC Began"
             date_ucr_recvd: "Date UCR Received"
             date_ucr_lc: "Date sent UCR -> LC"
