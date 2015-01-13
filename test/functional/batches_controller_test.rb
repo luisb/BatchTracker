@@ -18,7 +18,7 @@ class BatchesControllerTest < ActionController::TestCase
 
   test "should create batch" do
     assert_difference('Batch.count') do
-      post :create, batch: { LC_approve: @batch.LC_approve, corrections_needed: @batch.corrections_needed, date_UCB_UCR: @batch.date_UCB_UCR, date_UCR_LC: @batch.date_UCR_LC, date_beg_qc: @batch.date_beg_qc, ingested: @batch.ingested, name: @batch.name, name_short: @batch.name_short, notes: @batch.notes, passed_validation: @batch.passed_validation, server_location: @batch.server_location, size: @batch.size, valid_issues: @batch.valid_issues, valid_reels: @batch.valid_reels }
+      post :create, batch: { LC_approve: @batch.LC_approve, corrections_needed: @batch.corrections_needed, date_ucr_recvd: @batch.date_ucr_recvd, date_UCR_LC: @batch.date_UCR_LC, date_beg_qc: @batch.date_beg_qc, ingested: @batch.ingested, name: @batch.name, name_short: @batch.name_short, notes: @batch.notes, passed_validation: @batch.passed_validation, server_location: @batch.server_location, size: @batch.size, valid_issues: @batch.valid_issues, valid_reels: @batch.valid_reels }
     end
 
     assert_redirected_to batch_path(assigns(:batch))
@@ -35,7 +35,7 @@ class BatchesControllerTest < ActionController::TestCase
   end
 
   test "should update batch" do
-    put :update, id: @batch, batch: { LC_approve: @batch.LC_approve, corrections_needed: @batch.corrections_needed, date_UCB_UCR: @batch.date_UCB_UCR, date_UCR_LC: @batch.date_UCR_LC, date_beg_qc: @batch.date_beg_qc, ingested: @batch.ingested, name: @batch.name, name_short: @batch.name_short, notes: @batch.notes, passed_validation: @batch.passed_validation, server_location: @batch.server_location, size: @batch.size, valid_issues: @batch.valid_issues, valid_reels: @batch.valid_reels }
+    put :update, id: @batch, batch: { LC_approve: @batch.LC_approve, corrections_needed: @batch.corrections_needed, date_ucr_recvd: @batch.date_ucr_recvd, date_UCR_LC: @batch.date_UCR_LC, date_beg_qc: @batch.date_beg_qc, ingested: @batch.ingested, name: @batch.name, name_short: @batch.name_short, notes: @batch.notes, passed_validation: @batch.passed_validation, server_location: @batch.server_location, size: @batch.size, valid_issues: @batch.valid_issues, valid_reels: @batch.valid_reels }
     assert_redirected_to batch_path(assigns(:batch))
   end
 
